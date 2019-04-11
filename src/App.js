@@ -54,7 +54,7 @@ const FixedMenuLayout = () => (
       <Header as="h2" style={{ marginTop: "2em" }}>
         {/* Process */}
       </Header>
-      <div className="App-header">
+      <div className="App-header-2">
         <p>Conceptualization</p>
         <p>
           <b>(Lecture, references, inspiration)</b>
@@ -135,7 +135,7 @@ const FixedMenuLayout = () => (
           experience.
         </p>
       </div>
-      <div className="App-header">
+      <div className="App-header-2">
         <Image
           className="photo"
           src="https://i.imgur.com/eJVjsJP.jpg"

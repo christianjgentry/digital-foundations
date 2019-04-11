@@ -20,22 +20,23 @@ import {
 
 const FixedMenuLayout = () => (
   <div>
-    <Container text style={{ marginTop: "7em" }}>
-      <Header as="h1">Digital Foundations</Header>
-      <p>
-        <i>
-          A course that supplements a student's design studio without
-          overshadowing it.
-        </i>
-      </p>
-
-      {/* <p>
-        <b>Availability:</b> Monday - Thursday 6pm-9pm
-      </p> */}
+    <Container text>
+      <div className="App-header">
+        <div className="title">
+          <h1 className="title">Digital Foundations</h1>
+        </div>
+        <p>
+          <i>
+            A course that supplements a student's design studio without
+            overshadowing it.
+          </i>
+        </p>
+        <div className="video" style={{ marginTop: "2em" }}>
+          <Video />
+        </div>
+      </div>
     </Container>
-    <div className="video" style={{ marginTop: "2em" }}>
-      <Video />
-    </div>
+
     <Container text style={{ marginTop: "2em" }}>
       <Header as="h2" style={{ marginTop: "2em" }}>
         The final product for the course will be a 3D interactive maze.
@@ -53,26 +54,27 @@ const FixedMenuLayout = () => (
       <Header as="h2" style={{ marginTop: "2em" }}>
         {/* Process */}
       </Header>
-      <p>Conceptualization</p>
-      <p>
-        <b>(Lecture, references, inspiration)</b>
-      </p>
-      <p>|</p>
-      <p>2D Digital: Vector</p>
-      <p>
-        <b>(AutoCAD / Rhino)</b>
-      </p>
-      <p>|</p>
-      <p>3D Digital: Polygon Modeling / Rendering</p>
-      <p>
-        <b>(Rhino / Blender)</b>
-      </p>
-      <p>|</p>
-      <p>3D Experiential: Animation / Logic</p>
-      <p>
-        <b>(Unity / C#)</b>
-      </p>
-
+      <div className="App-header">
+        <p>Conceptualization</p>
+        <p>
+          <b>(Lecture, references, inspiration)</b>
+        </p>
+        <p>|</p>
+        <p>2D Digital: Vector</p>
+        <p>
+          <b>(AutoCAD / Rhino)</b>
+        </p>
+        <p>|</p>
+        <p>3D Digital: Polygon Modeling / Rendering</p>
+        <p>
+          <b>(Rhino / Blender)</b>
+        </p>
+        <p>|</p>
+        <p>3D Experiential: Animation / Logic</p>
+        <p>
+          <b>(Unity / C#)</b>
+        </p>
+      </div>
       <Header as="h2" style={{ marginTop: "2em" }}>
         Maze Criteria
       </Header>
@@ -85,6 +87,11 @@ const FixedMenuLayout = () => (
       <p>
         Standard W,A,S,D Shift Space controls will be used to navigate the maze.
       </p>
+      <Image
+        className="photo"
+        src="https://image.flaticon.com/icons/svg/1687/1687629.svg"
+        size="small"
+      />
       <h3>The maze will consist of:</h3>
       <i>
         <p>Starting point</p>
@@ -95,8 +102,8 @@ const FixedMenuLayout = () => (
 
         <p className="pad">
           <b>
-            Students are encouraged to experiment and take creative liberties as
-            long as the maze runs and is completable.
+            Students are strongly encouraged to experiment and take creative
+            liberties as long as the maze runs and is completable.
           </b>
         </p>
       </i>
@@ -128,44 +135,46 @@ const FixedMenuLayout = () => (
           experience.
         </p>
       </div>
-      <Image
-        className="photo"
-        src="https://i.imgur.com/eJVjsJP.jpg"
-        size="medium"
-      />
-      <b>
-        <p>Christian Gentry</p>
-        <p>Availability: Monday - Thursday 6pm-9pm</p>
-      </b>
-      <p className="bio">
-        <b> Post-graduation plans:</b> After finishing UTA’s grad program I will
-        be working at Zeal IT Consultants in Dallas as a software developer. I
-        am going to be working professionally in the tech field to leverage my
-        design thinking and technical skil lset in a new context. At Zeal I have
-        been able to have discussions with HKS architects about how we can
-        enhance their use of AR and VR technologies. I am also working with WRA
-        architects to bring photogrammetry to their firm via laser scanning and
-        drones.
-      </p>
+      <div className="App-header">
+        <Image
+          className="photo"
+          src="https://i.imgur.com/eJVjsJP.jpg"
+          size="medium"
+        />
+        <b>
+          <p>Christian Gentry</p>
+          <p>Availability: Monday - Thursday 6pm-9pm</p>
+        </b>
+        <p className="bio">
+          <b> Post-graduation plans:</b> After finishing UTA’s grad program I
+          will be working at Zeal IT Consultants in Dallas as a software
+          developer. I am going to be working professionally in the tech field
+          to leverage my design thinking and technical skillset in a new
+          context. At Zeal I have been able to have discussions with HKS
+          architects about how we can enhance their use of AR and VR
+          technologies. I am also working with WRA architects to bring
+          photogrammetry to their firm via laser scanning and drones.
+        </p>
 
-      <p className="bio">
-        <b> Past Experience:</b> I have previously worked at Huckabee architects
-        in Fort Worth for over two years and Toll Architecture in Grapevine for
-        a year before that. In these roles I performed traditional architectural
-        tasks as well as tasks that have lead me to the path I am on now. At
-        Huckabee my role expanded to include software development, workflow
-        optimization, and photogrammetry for the firm.
-      </p>
+        <p className="bio">
+          <b> Past Experience:</b> I have previously worked at Huckabee
+          architects in Fort Worth for over two years and Toll Architecture in
+          Grapevine for a year before that. In these roles I performed
+          traditional architectural tasks as well as tasks that have lead me to
+          the path I am on now. At Huckabee my role expanded to include software
+          development, workflow optimization, and photogrammetry for the firm.
+        </p>
 
-      <p className="bio">
-        <b> Teaching Goals:</b> I do not feel like my knowledge base and skill
-        set are best put to use instructing a studio at the moment. My desire
-        would be to teach a standalone class that enhances students abilities to
-        leverage a digital toolset while expanding their abilities to think and
-        communicate using technology. I want students to take the skills and
-        concepts gained in my class to enhance the other aspects of their
-        education.
-      </p>
+        <p className="bio">
+          <b> Teaching Goals:</b> I do not feel like my knowledge base and skill
+          set are best put to use instructing a studio at the moment. My desire
+          would be to teach a standalone class that enhances students abilities
+          to leverage a digital toolset while expanding their abilities to think
+          and communicate using technology. I want students to take the skills
+          and concepts gained in my class to enhance the other aspects of their
+          education.
+        </p>
+      </div>
     </Container>
   </div>
 );

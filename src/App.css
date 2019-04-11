@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-bottom: 200px;
 }
 
 .App-logo {
@@ -30,4 +31,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.video {
+  margin: auto;
+  width: 80%;
+}
+
+.pad {
+  padding-top: 30px;
+}
+
+.photo {
+  margin: auto;
+  width: 50%;
+  padding-top: 3em;
+}
+
+.bio {
+  margin: auto;
+  width: 50%;
+  text-align: left;
+  padding-top: 2em;
+}
+
+.class-style {
+  margin: auto;
+  width: 80%;
+  text-align: left;
+  padding-top: 1em;
 }
